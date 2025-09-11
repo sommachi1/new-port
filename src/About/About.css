@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+}
+
+.about-img img {
+  width: 15vw;
+  border-radius: 12px;
+  object-fit: cover;
+}
+#menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.about-content h3 {
+  font-size: 2rem;
+}
+.about-content p {
+  font-size: 1rem;
+  margin: 2rem 0 3rem;
+}
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content{
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

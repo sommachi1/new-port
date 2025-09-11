@@ -1,0 +1,135 @@
+.portfolio-section {
+  padding: 0 5rem;
+  margin: 60px auto;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 35%;
+  /* z-index: 10; */
+}
+
+.step-img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.step-img-box img:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+.portfolio-container {
+  /* 1140px */
+  max-width: 120rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 500;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 2.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #007bff;
+}
+
+button {
+  padding: 10px 10px;
+  background-color: #32cbff;
+  border-radius: 5px;
+}
+
+.see-g .see-more-btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: #32cbff;
+  border-radius: 4rem;
+  font-size: 1.3rem;
+  color: black;
+  box-shadow: 0 0 1rem #32cbff;
+  font-weight: 200px;
+}
+
+.see-g .see-more-btn:hover {
+  background-color: #1688ae;
+  color: white;
+}
+
+.see-g {
+  display: flex;
+  justify-content: center;
+}
