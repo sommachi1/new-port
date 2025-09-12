@@ -3,17 +3,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-bottom: 2px solid var(--smd-bf-color);
 }
-/* .header-container{
-  display: flex;
-  justify-content: space-between;
-} */
+
 .logo {
   font-size: 2.5rem;
   color: #32cbff;
@@ -21,22 +19,102 @@
   cursor: default;
 }
 
-.navbar a {
-  font-size: 1rem;
-  color: white;
-  margin-left: 4rem;
-  font-weight: 700;
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.navbar a:hover,
-.navbar a:active {
+.navbar a {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar a:hover {
   color: #32cbff;
 }
 
-.navbar .fm {
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fm {
   border-radius: 4rem;
   border: 2px solid #32cbff;
-  padding: 4px 4px;
+  padding: 0.5rem 1.5rem;
   color: white;
   background-color: transparent;
+  font-weight: 600;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fm:hover {
+  background-color: #32cbff;
+  color: black;
+  transform: translateY(-0.2px);
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  color: #32cbff;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 2rem;
+    background: var(--bg-color);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .fm {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .fm {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }
