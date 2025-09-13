@@ -1,17 +1,14 @@
-.portfolio-section {
-  padding: 0 5rem;
-  margin: 60px auto;
-}
+
 
 .step-number {
-  font-size: 8.6rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.2rem;
 }
 
 .step-description {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
@@ -106,20 +103,21 @@
 }
 
 button {
-  padding: 10px 10px;
+
   background-color: #32cbff;
   border-radius: 5px;
 }
 
 .see-g .see-more-btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
+  padding: 0.8rem 2rem;
   background-color: #32cbff;
-  border-radius: 4rem;
-  font-size: 1.3rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
   color: black;
-  box-shadow: 0 0 1rem #32cbff;
-  font-weight: 200px;
 }
 
 .see-g .see-more-btn:hover {

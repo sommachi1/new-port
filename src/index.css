@@ -28,6 +28,18 @@ body {
   color: var(--text-color);
 }
 
+.hero-btn{
+    
+  padding: 0.8rem 2rem;
+  background-color: #32cbff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+}
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;

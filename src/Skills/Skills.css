@@ -6,8 +6,10 @@
 }
 
 .skill-h2 {
-  text-align: center;
-  font-size: 5rem;
+font-size: 3.5rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
 }
 
 .skill-card {
@@ -27,7 +29,7 @@
   border-radius: 9px;
 }
 .skill-card p {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .progress-bar {
   width: 100%;

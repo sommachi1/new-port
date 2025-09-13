@@ -1,9 +1,10 @@
 .contact h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .contact p{
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .cotact form {
@@ -29,6 +30,18 @@
   background-color: #051419;
   border-radius: 8px;
   margin: 2rem 0;
+}
+
+.contact-btn{
+    padding: 0.8rem 2rem;
+  background-color: #32cbff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
 }
 
 .contact form .input-box input {

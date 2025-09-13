@@ -1,41 +1,76 @@
-.about {
+.about-section {
+  padding: 4rem 10%;
+  background: #020202;
+  color: white;
+}
+
+.about-h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  flex-wrap: wrap; /* ensures responsiveness */
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-text p{
+  margin-top: 1rem;
+}
+
+.about-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #32cbff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.about-btn:hover {
+  background-color: #1688ae;
+  color: white;
+}
+
+.about-image {
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  background-color: black;
 }
 
-.about-img img {
-  width: 15vw;
-  border-radius: 12px;
-  object-fit: cover;
-}
-#menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-.heading {
-  text-align: center;
-  font-size: 3rem;
-}
-
-
-.about-content h3 {
-  font-size: 1.5rem;
-}
-.about-content p {
-  font-size: 1rem;
-  margin: 2rem 0 3rem;
-}
-.about-content h2 {
-  text-align: left;
-}
-
-.about-content{
-  overflow: hidden;
+.about-image img {
+  max-width: 300px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.about-image img:hover {
+  filter: grayscale(0%);
 }

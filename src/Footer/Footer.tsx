@@ -1,4 +1,9 @@
 import "../Footer/Footer.css"
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer: React.FC = () => {
   return (
@@ -8,14 +13,10 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="social-media">
-          <a href="https://github.com/sommachi1"><i className="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/favour-mmesoma-11b3b0367/"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i className="fa-brands fa-tiktok"></i></a>
-          <a href="http://wa.me/07025286737"><i className="fa-brands fa-whatsapp"></i></a>
-        </div>
-
-      <div className="footer-iconTop">
-        <a href="#home"><i className="fa-solid fa-angle-up"></i></a>
+          <a href="https://github.com/sommachi1">  <FaGithub  className="fa-brands"/></a>
+          <a href="https://www.linkedin.com/in/favour-mmesoma-11b3b0367/"> <FaLinkedin /></a>
+          <a href="#"> <FaTiktok /></a>
+          <a href="http://wa.me/07025286737"><FaWhatsapp /></a>
         </div>
       </footer>
   );

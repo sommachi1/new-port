@@ -1,4 +1,10 @@
 import "../Hero/Hero.css";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { ReactTyped } from "react-typed";
+
 
 const Hero: React.FC = () => {
   return (
@@ -6,31 +12,44 @@ const Hero: React.FC = () => {
       <div className="home-content">
         <h3>Hi, i am</h3>
         <h1>Favour Mmesomachi</h1>
-        <h3>
-          And i am a <span className="multiple-text"></span>
-        </h3>
+       <h3>
+        I am a{" "}
+        <span className="typed-text">
+          <ReactTyped
+            strings={[
+              "Frontend Developer",
+              "Seo Specialist",
+              "React Enthusiast",
+              "Tech Explorer",
+            ]}
+            typeSpeed={50}
+            backSpeed={30}
+            loop
+          />
+        </span>
+      </h3>
         <p>
           Welcome, i bring ideas to life on the web.Currently, I'm focused on
           building functional & responsive websites
         </p>
         <div className="social-media">
           <a href="https://github.com/sommachi1">
-            <i className="fa-brands fa-github"></i>
+            <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/favour-mmesoma-11b3b0367/">
-            <i className="fa-brands fa-linkedin"></i>
+            <FaLinkedin />
           </a>
           <a href="#">
-            <i className="fa-brands fa-tiktok"></i>
+            <FaTiktok />
           </a>
           <a href="http://wa.me/07025286737">
-            <i className="fa-brands fa-whatsapp"></i>
+           <FaWhatsapp />
           </a>
         </div>
         <div>
           <a
             href="./assets/Favour_Mmesomachi_Tech_CV.pdf"
-            className="btn"
+            className="hero-btn"
             target="_blank"
           >
             View CV

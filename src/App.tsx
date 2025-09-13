@@ -7,6 +7,7 @@ import Footer from "../src/Footer/Footer";
 import Services from "../src/Services/services"
 import Contact from "../src/Contact/Contact"
 import Skills from "../src/Skills/Skills"
+import ScrollTop from "../src/Scrolltop/scrolltop"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills/>
       <ProJects />
       <Contact/>
+      <ScrollTop/>
       <Footer />
     </>
   );

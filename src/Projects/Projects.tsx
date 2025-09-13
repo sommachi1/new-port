@@ -4,7 +4,7 @@ const Projects: React.FC = () => {
   return (
    <section className="portfolio-section" id="portfolio">
       <div className="portfolio-container">
-        <h2 className="skill-h2">Recent <span>Projects</span></h2>
+        <h2 className="skill-h2">Recent<span>Projects</span></h2>
       </div>
 
       <div className="container grid grid--2-cols grid--center-v">

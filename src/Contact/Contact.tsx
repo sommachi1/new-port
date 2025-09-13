@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 
     <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
-    <input type="submit" value="Send Message" className="btn"/>
+    <input type="submit" value="Send Message" className="contact-btn"/>
   </form>
 </section>
   );
