@@ -29,7 +29,7 @@ body {
 }
 
 .hero-btn{
-    
+  margin-top: 1.5rem;
   padding: 0.8rem 2rem;
   background-color: #32cbff;
   border: none;
@@ -39,6 +39,8 @@ body {
   cursor: pointer;
   transition: 0.3s ease;
   color: black;
+    
+ 
 }
 section {
   min-height: 100vh;

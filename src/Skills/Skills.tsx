@@ -1,10 +1,18 @@
 import "../Skills/Skills.css"
+import { motion } from "framer-motion";
+
 
 
 
 const Skills: React.FC = () => {
   return (
-    <section className="skills-container" id="skills-container">
+    <motion.section className="skills-container" id="skills-container"
+    initial={{ opacity: 0, x: -100 }}       // hidden (fade out + slide down)
+  whileInView={{ opacity: 1, x: 0 }}    // visible (fade in + slide up)
+  transition={{ duration: 0.8, ease: "easeOut" }} // animation timing
+  viewport={{ once: true }}             // animates only once when visible
+    
+    >
       <h2 className="skill-h2">My Tech<span>Stack</span></h2>
       <div className="skills-grid">
       
@@ -86,7 +94,7 @@ const Skills: React.FC = () => {
         <div className="percentage">85%</div>
       </div>
      </div>
-  </section>
+  </motion.section>
   );
 };
 

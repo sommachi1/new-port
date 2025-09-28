@@ -17,13 +17,9 @@
   background-color: #051419;
   border-radius: 1rem;
   border: 20px solid #051419;
-  transition: 0.5s ease;
   text-align: center;
 }
 
-.services-container .services-box:hover {
-  transform: scale(1.02);
-}
 
 .services-box i {
   font-size: 7rem;

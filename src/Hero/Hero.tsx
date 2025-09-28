@@ -1,14 +1,21 @@
 import "../Hero/Hero.css";
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import { CiTwitter } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 
 
 const Hero: React.FC = () => {
   return (
-    <section className="home" id="home">
+    <motion.section className="home" id="home"
+    
+    initial={{ opacity: 0, x: 100 }}       // hidden (fade out + slide down)
+  whileInView={{ opacity: 1, x: 0 }}    // visible (fade in + slide up)
+  transition={{ duration: 0.8, ease: "easeOut" }} // animation timing
+  viewport={{ once: true }}             // animates only once when visible
+  >
       <div className="home-content">
         <h3>Hi, i am</h3>
         <h1>Favour Mmesomachi</h1>
@@ -40,7 +47,7 @@ const Hero: React.FC = () => {
             <FaLinkedin />
           </a>
           <a href="#">
-            <FaTiktok />
+            <CiTwitter />
           </a>
           <a href="http://wa.me/07025286737">
            <FaWhatsapp />
@@ -56,7 +63,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

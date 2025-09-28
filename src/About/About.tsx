@@ -1,9 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "./About.css";
 
 const About: React.FC = () => {
   return (
-    <section className="about-section" id="about">
+    <motion.section className="about-section" id="about"
+    initial={{ opacity: 0, x: -100 }}       // hidden (fade out + slide down)
+  whileInView={{ opacity: 1, x: 0 }}    // visible (fade in + slide up)
+  transition={{ duration: 0.8, ease: "easeOut" }} // animation timing
+  viewport={{ once: true }}             // animates only once when visible
+    >
       {/* Section Title & Heading */}
       <h2 className="about-h2">About<span>Me</span></h2>
       <h3 className="section-heading">Frontend Developer</h3>
@@ -33,7 +40,7 @@ const About: React.FC = () => {
           <img src="/src/assets/images/hero img.png" alt="About Me" />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

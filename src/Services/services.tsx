@@ -1,10 +1,17 @@
 import "../Services/services.css"
+import { motion } from "framer-motion";
 import { DiCode } from "react-icons/di";
 import { IoStorefrontOutline } from "react-icons/io5";
 import { GrOptimize } from "react-icons/gr";
 const Services: React.FC = () => {
   return (
-    <section className="services" id="services">
+    <motion.section className="services" id="services"
+    
+    initial={{ opacity: 0, x: -100 }}       // hidden (fade out + slide down)
+  whileInView={{ opacity: 1, x: 0 }}    // visible (fade in + slide up)
+  transition={{ duration: 0.8, ease: "easeOut" }} // animation timing
+  viewport={{ once: true }}             // animates only once when visible
+    >
       
       <h2 className="skill-h2">My<span>Services</span></h2>
 
@@ -30,7 +37,7 @@ const Services: React.FC = () => {
             improve visibility, and drive organic traffic. From keyword research to on-page and off-page SEO, I help businesses attract the right audience and grow online presence. </p>
           </div>
         </div>
-      </section>
+      </motion.section>
   );
 };
 
