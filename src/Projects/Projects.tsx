@@ -1,4 +1,5 @@
 import "../Projects/Projects.css"
+import myImage from "../assets/images/crypt2.png";
 import { motion } from "framer-motion";
 
 
@@ -18,19 +19,32 @@ const Projects: React.FC = () => {
         
         <div className="step-text-box">
           <p className="step-number">01</p>
-          <h3 className="heading-tertiary">EduFlex
+          <h3 className="heading-tertiary">CryptoTracker
           </h3>
           <p className="step-description">
-           EduFlex is your digital classNameroom for mastering new skills, leveling up your career,
-            or simply learning something new for the love of it. From tech and business to design, marketing, and personal development – 
-           we’ve got courses that meet real-world demands, taught by real-world experts.
+           A crypto tracking platform that lets users monitor live prices, market caps,
+            and trends using the CoinGecko API. The app features a clean, responsive UI with React and Material UI,
+             making it fast and user-friendly. Future updates will include a P2P exchange, 
+           market analysis tools, and an exchange calculator.
           </p>
         </div>
         <div className="step-img-box">
-          <img
-            src="./assets/images/edufximg.jpg" alt="Project 1"
-          />
-        </div>
+  <a 
+    href="https://crypto-traccker.netlify.app/watchlist" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="image-card"
+  >
+    <img 
+      src={myImage}
+      alt="Example site" 
+      className="step-img"
+    />
+    <div className="image-overlay">
+      <span>View</span>
+    </div>
+  </a>
+</div>
 
         
         <div className="step-img-box">
@@ -40,11 +54,10 @@ const Projects: React.FC = () => {
         </div>
         <div className="step-text-box">
           <p className="step-number">02</p>
-          <h3 className="heading-tertiary">Socialised</h3>
+          <h3 className="heading-tertiary">TechGadgets E-Commerce Store</h3>
           <p className="step-description">
-            Socialised isn’t just a page – it’s a whole vibe for everything social media.
-             Whether you’re a content creator, a trend watcher,
-             or just someone who loves staying in the loop, this is your go-to digital hub.
+           I developed a modern e-commerce website for browsing and purchasing tech gadgets. Built with React and TypeScript, 
+           it features a responsive design, product catalog with category filtering, and a dynamic shopping cart. Future updates will include secure checkout, user accounts, and wishlist functionality.
           </p>
         </div>
 
