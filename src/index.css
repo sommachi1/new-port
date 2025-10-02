@@ -346,3 +346,18 @@ i {
 
 }
 
+@media (max-width: 430px) {
+  .services {
+    margin-top: -4rem;
+  }
+
+  .skills-container {
+    margin-top: -70rem;     /* reduce space before skills */
+  }
+
+  .about-section{
+    margin-top: -20rem;
+  }
+}
+
+
