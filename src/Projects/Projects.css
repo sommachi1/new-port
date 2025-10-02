@@ -167,3 +167,323 @@ button {
   display: flex;
   justify-content: center;
 }
+
+.step-number {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The clickable area */
+.image-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image styles */
+.step-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Optional: subtle zoom on hover */
+.image-card:hover .step-img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Show overlay on hover */
+.image-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.portfolio-container {
+  max-width: 1400px;
+} 
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 500;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 2.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+  color: #007bff;
+}
+
+button {
+  background-color: #32cbff;
+  border-radius: 5px;
+}
+
+.see-g .see-more-btn {
+  padding: 0.8rem 2rem;
+  background-color: #32cbff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.see-g .see-more-btn:hover {
+  background-color: #1688ae;
+  color: white;
+}
+
+.see-g {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 7.2rem;
+  }
+  
+  .grid:not(:last-child) {
+    margin-bottom: 7.2rem;
+  }
+  
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 7.2rem;
+  }
+  
+  .heading-primary {
+    font-size: 2rem;
+  }
+  
+  .step-number {
+    font-size: 3rem;
+  }
+  
+  .step-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Tablet (600px - 767px) */
+@media (max-width: 767px) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  
+  .grid:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+  
+  .heading-secondary {
+    font-size: 2.6rem;
+    margin-bottom: 4.8rem;
+  }
+  
+  .step-img-box {
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile (480px - 599px) */
+@media (max-width: 599px) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+
+  
+  
+  .grid {
+    column-gap: 2.4rem;
+    row-gap: 3.6rem;
+  }
+  
+  .grid:not(:last-child) {
+    margin-bottom: 3.6rem;
+  }
+  
+  .heading-secondary {
+    font-size: 2.2rem;
+    margin-bottom: 3.6rem;
+    text-align: center;
+  }
+  
+  .heading-primary {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .heading-tertiary {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .step-number {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .step-description {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .step-img-box {
+    margin-top: 1.5rem;
+  }
+  
+  /* Make images bigger on mobile as requested */
+  .image-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .step-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Small Mobile (up to 479px) */
+@media (max-width: 479px) {
+  .grid {
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+  }
+  
+  .grid:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  
+  .heading-secondary {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  
+  .heading-primary {
+    font-size: 1.9rem;
+  }
+  
+  .step-number {
+    font-size: 2rem;
+  }
+  
+  .see-g .see-more-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Even bigger images on very small screens */
+  .image-card {
+    width: 100%;
+    border-radius: 8px;
+  }
+}

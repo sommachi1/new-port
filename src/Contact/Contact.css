@@ -44,6 +44,12 @@
   color: black;
 }
 
+.contact-btn:hover {
+  background-color: #1688ae;
+  color: white;
+}
+
+
 .contact form .input-box input {
   width: 49%;
 }

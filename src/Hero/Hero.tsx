@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
         <div>
           <a
             href="./assets/Favour_Mmesomachi_Tech_CV.pdf"
-            className="hero-btn"
+            className="hr-btn"
             target="_blank"
           >
             View CV

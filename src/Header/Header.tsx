@@ -1,25 +1,33 @@
-
-import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // using react-icons
 import "../Header/Header.css";
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className="header">
       <h1 className="logo">SD.</h1>
-      
-      <nav className="navbar" id="mobile-menu">
-        <a href="#home" className="active">
-          Home
-        </a>
-        <a href="#about">About</a>
-        <a href="#skills-container">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+
+      {/* Navbar */}
+      <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>
+        <a href="#home" onClick={closeMenu}>Home</a>
+        <a href="#about" onClick={closeMenu}>About</a>
+        <a href="#skills-container" onClick={closeMenu}>Skills</a>
+        <a href="#portfolio" onClick={closeMenu}>Portfolio</a>
       </nav>
-      
+
+      {/* Actions */}
       <div className="header-actions">
         <button className="fm">Get-in-Touch</button>
-        <i className="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+
+        {/* ✅ Toggle icon with react-icons */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
       </div>
     </header>
   );

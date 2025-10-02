@@ -1,3 +1,6 @@
+/* =======================
+   HEADER BASE STYLES
+======================= */
 .header {
   position: fixed;
   top: 0;
@@ -19,10 +22,12 @@
   cursor: default;
 }
 
+/* Navbar links (desktop) */
 .navbar {
   display: flex;
   align-items: center;
   gap: 2rem;
+  transition: all 0.3s ease;
 }
 
 .navbar a {
@@ -37,6 +42,7 @@
   color: #32cbff;
 }
 
+/* Header buttons */
 .header-actions {
   display: flex;
   align-items: center;
@@ -61,58 +67,79 @@
   transform: translateY(-0.2px);
 }
 
+/* Hamburger icon */
 .menu-icon {
   font-size: 1.8rem;
   color: #32cbff;
-  display: none;
+  display: none; /* hidden on desktop */
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
+.menu-icon:hover {
+  transform: rotate(90deg);
+}
+
+/* =======================
+   TABLET + MOBILE STYLES
+======================= */
 @media (max-width: 768px) {
   .header {
     padding: 1rem;
   }
-  
+
+  /* Navbar becomes hidden sidebar */
   .navbar {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    padding: 2rem;
-    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: #32cbff;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease;
   }
 
+  /* Active state - slide in */
   .navbar.active {
     left: 0;
   }
 
   .navbar a {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    color: black;
     width: 100%;
     padding: 0.5rem 0;
   }
 
+  .navbar a:hover {
+    color: white;
+  }
+
+  /* Show hamburger */
   .menu-icon {
     display: block;
   }
 
+  /* Make button smaller */
   .fm {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
 }
 
+/* =======================
+   SMALL MOBILE
+======================= */
 @media (max-width: 480px) {
   .logo {
     font-size: 2rem;
   }
-  
+
   .fm {
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;

@@ -1,0 +1,22 @@
+.hr-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #32cbff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+
+  display: inline-block;  
+  text-decoration: none;  
+  white-space: nowrap;    
+  overflow: hidden;       
+}
+
+.hr-btn:hover {
+  background-color: #1688ae;
+  color: white;
+}
